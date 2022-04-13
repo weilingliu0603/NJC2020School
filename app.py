@@ -33,16 +33,5 @@ def search():
        return render_template("search.html", cursor = cursor)
        
 if __name__ == '__main__':
-    app.run(port = 5678, debug = True)
+    app.run(debug = True, use_reloader = True)
     
-
-#app.run(debug=True) #http://127.0.0.1:5000 default Python local host and port number
-##@app.route('/about')
-##def aboutpage():
-##       return render_template("about.html")
-##
-##@app.errorhandler(404)
-##def page_not_found(e):
-##    # note that we set the 404 status explicitly
-##    return render_template('404.html'), 404
-
